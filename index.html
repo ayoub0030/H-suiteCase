@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauce or Soot - The Ultimate Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="video-background">
+        <iframe 
+            src="https://www.youtube.com/embed/_reb-l1goiA?autoplay=1&mute=1&loop=1&playlist=_reb-l1goiA&controls=0&showinfo=0" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div class="overlay"></div>
+    <div class="container">
+        <header>
+            <h1>Sauce or Soot?</h1>
+            <p class="tagline">Is it sauce? Is it soot? Only you can decide!</p>
+            <p class="sub-tagline">Where every suitcase has a saucy secret!</p>
+        </header>
+
+        <main>
+            <div class="button-container">
+                <button id="playButton" class="main-button">Let's Play!</button>
+                <button id="aboutButton" class="main-button">About Sauce or Soot</button>
+            </div>
+
+            <div id="gameContainer" class="hidden">
+                <div id="timer">3</div>
+                <div id="gameImage"></div>
+                <div class="game-buttons">
+                    <button id="sauceButton">SAUCE!</button>
+                    <button id="sootButton">SOOT!</button>
+                </div>
+                <div id="score">Score: 0</div>
+            </div>
+
+            <div id="resultsContainer" class="hidden">
+                <h2>Game Over!</h2>
+                <p id="finalScore"></p>
+                <p id="title"></p>
+                <button id="playAgain">Play Again</button>
+            </div>
+
+            <div id="easterEgg">
+                <button id="secretButton">DO NOT CLICK ME!</button>
+            </div>
+        </main>
+
+        <footer>
+            <p> 2024 Sauce or Soot - The Ultimate Decision Game</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
